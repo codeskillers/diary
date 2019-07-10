@@ -1,0 +1,19 @@
+<view class="container">
+    <view class="weather">
+       <view class="city">
+          <text class="cityDes">城市: {{city}}</text>            
+       </view>
+       <view class="livewea">
+           <text class="liveweaDes">天气: {{livewea}}</text>            
+       </view>
+        <view class="temperature">
+           <text class="temperatureDes">温度: {{temperature}}℃</text>            
+       </view>
+       <view class="windpower">
+           <text class="windpowerDes">风速: {{winddirection}}  {{windpower}}级</text>            
+       </view>
+       <view class="humidity">
+           <text class="humidityDes">湿度: {{humidity}}%</text>
+       </view>
+    </view>
+</view>

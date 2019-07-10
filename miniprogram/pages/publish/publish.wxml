@@ -1,0 +1,31 @@
+<view class="container">
+    <view class="publish">
+        <view class="txtcontainer">
+            <textarea class="areas" placeholder='#写点开心的~' minlength="{{min}}" maxlength="{{max}}" bindinput="inputs">
+                <text class="currentWordNumber">{{currentWordNumber|0}}/{{max}}</text>
+                <text class="hint">{{texts}}</text>
+            </textarea>
+            <view class="txtImgbox" id="uploaderFiles">
+                <block wx:for="{{files}}" wx:key="*this">
+                    <view class="txtImg1" bindtap="previewImage" id="{{item}}">
+                        <image class="txtImg" src="{{item}}" mode="scaleToFill" />
+                    </view>
+                </block>
+            </view>
+        </view>
+        <view class="address">
+            <view class="addressBox">
+                <image class="addressImg" src="../../images/address.png" />
+            </view>
+        </view>
+        <view class="publishImg" bindtap="upload">
+            <image class="pubImg" src="../../images/publishimg.png" />
+        </view>
+        <view class="publishExp">
+            <image class="expImg" src="../../images/expression.png" />
+        </view>
+        <view class="finish" bindtap="toFinish">
+            <image class="finishImg" src="../../images/pub.png" />
+        </view>
+    </view>
+</view>

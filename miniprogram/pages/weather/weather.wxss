@@ -1,0 +1,56 @@
+/* miniprogram/pages/weather/weather.wxss */
+page{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background:-webkit-linear-gradient(to right bottom,#66BAB7,#86A697,#B5CAA0);
+    animation: changecolor 6s linear infinite alternate;
+    color: #fff;
+    display: flex;
+    flex-direction: column
+}
+@keyframes changecolor{
+     0%{
+        background: #66BAB7;
+    }
+     50%{
+        background: #86A697;
+    }
+    100%{
+        background:#B5CAA0;
+    }
+}
+
+.city,.livewea,.temperature,.windpower,.humidity{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 70rpx;
+    position: relative;
+}
+.weather{
+    margin-top: 50rpx;
+}
+.cityDes{
+    position: relative;
+    left: 5rpx;
+}
+.windpowerDes{
+    position: relative;
+    left:12rpx;
+}
+.temperatureDes{
+    position: relative;
+    right: 20rpx;
+}
+.humidityDes{
+    position: relative;
+    right:17rpx;
+}
+.livewea{
+    position: relative;
+    right: 25rpx;
+}

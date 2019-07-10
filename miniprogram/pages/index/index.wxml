@@ -1,0 +1,42 @@
+<view class="container">
+  <scroll-view scroll-y="true" scroll-into-view="{{toView}}" scroll-with-animation="{{true}}">
+      <block wx:for="{{TxtImg}}" wx:key="*this">
+        <view class="dailyBox">
+        <view class="time">{{item.createTime}}</view>
+        <view class="dailyImg" bindtap="previewImage" id="{{item.image}}">
+          <image class="dailyImage" src="{{item.image}}" mode="scaleToFill"/>
+        </view>
+        <view class="dailyDes">
+          {{item.txtvalue}}
+        </view>
+        </view>
+      </block>
+  </scroll-view>
+  <view class="jiahao" bindtap="onChangeShowState">
+    <image class="jiahaoImg" src="../../images/jia.png" />
+  </view>
+  <view class="isHidebox{{showView? 'show':''}}">
+    <view class="weather" bindtap="Toweather">
+      <view class="weatherimgBox">
+        <image src="../../images/weather.png" class="weatherImg" />
+      </view>
+      <text class="weatherTxt">天气</text>
+    </view>
+    <view class="write" bindtap="Topublish">
+      <view class="writeimgBox">
+        <image src="../../images/write.png" class="writeImg" />
+      </view>
+      <text class="writeTxt">写点</text>
+    </view>
+    <view class="skin" bindtap="upload">
+      <view class="skinimgBox">
+        <image src="../../images/skin.png" class="skinImg" />
+      </view>
+      <text class="skinTxt">背景</text>
+    </view>
+  </view>
+  <view class="music{{isPlayingMusic? 'Play':''}}" bindtap="onMusicTap">
+    <image class="musicPlayimg" src="../../images/music.png" />
+  </view>
+  <image class="Bgimg" src='{{src}}' mode="scaleToFill"></image>
+</view>

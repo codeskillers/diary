@@ -1,0 +1,23 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/weather/weather",
+    "pages/publish/publish"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundColor": "#353639",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#353639",
+    "navigationBarTitleText": "小U日记",
+    "navigationBarTextStyle": "white"
+  },
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "sitemapLocation": "sitemap.json"
+}

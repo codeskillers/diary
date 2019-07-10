@@ -1,0 +1,223 @@
+page{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+scroll-view{
+    position: absolute;
+    top: 120rpx;
+    width: 100%;
+    height: 76%;
+    display: flex;
+    flex-direction: column;
+    overflow-y:hidden 
+}
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    color: transparent;
+  }
+.dailyBox{
+    width:500rpx;
+    height:500rpx;
+    margin-left: 160rpx;
+    position: relative;
+    border-left: 2px solid #969696;
+    padding-left:40rpx;
+}
+.dailyBox::before{
+    content:'';
+    width: 20rpx;
+    height: 20rpx;
+    border:8rpx solid #828CA1;
+    background-color:#999EBB;
+    border-radius:50%;
+    position: absolute;
+    left: -20rpx;
+    top:120rpx;
+}
+.dailyImg{
+    height: 300rpx;
+}
+.dailyImage{
+    width: 500rpx;
+    height: 300rpx;
+}
+.dailyDes{
+    height: 200rpx;
+}
+.Bgimg{
+    z-index:-2;
+    width: 100%;
+    height: 100%;
+}
+.skin{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    top: 5px;
+    left: 10px;
+}
+.skinimg{
+    width: 32px;
+    height: 32px;
+}
+.music{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.musicPlay{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    -webkit-animation:play 1.77s linear infinite;
+}
+@-webkit-keyframes play{
+     
+    0%{-webkit-transform:rotate(0deg);}
+
+    25%{-webkit-transform:rotate(90deg);}
+
+    50%{-webkit-transform:rotate(180deg);}
+
+    75%{-webkit-transform:rotate(270deg);}
+
+    100%{-webkit-transform:rotate(360deg);}
+}
+.write{
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    bottom: 40px;
+    right: 10px;
+}
+.writeImg{
+    width: 36px;
+    height:36px;
+}
+.getAddress{
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    bottom: 10px;
+    left: l0px;
+    font-size: 12px;
+}
+.timemachineImg{
+    width: 48px;
+    height: 48px;
+}
+.musicPlayimg{
+    width: 32px;
+    height: 32px;
+    z-index: 9999;
+}
+.jiahao{
+    width: 36px;
+    height: 36px;
+    position: absolute;
+    bottom: 20px;
+    right: 5px;    
+    z-index:9999;
+}
+.jiahaoImg{
+    width: 36px;
+    height: 36px;
+}
+.isHideboxshow{
+    display: block;
+    height: 160px;
+    width: 120px;
+    background-color:#434343;
+    position: absolute;
+    right: 40px;
+    bottom: 50px;
+    border-radius:6px;
+    color:#FEFEFE;
+    font-size: 12px;
+    letter-spacing:2px;
+}
+.isHidebox{
+    display: none;
+}
+.weather{
+    position: absolute;
+    left: 5px;
+}
+.weatherimgBox{
+    width: 35px;
+    height: 35px;
+    position: relative;
+    bottom: -11px;
+    display: inline-block;
+    margin-left: 5px;
+}
+.weatherImg{
+    width: 35px;
+    height: 35px;
+}
+.weatherTxt{
+    display: inline-block;
+    position: relative;
+    margin-left: 5px;
+    top:-2px;
+}
+.writeimgBox{
+    width: 22px;
+    height: 22px;
+    position: relative;
+    bottom: -11px;
+    display: inline-block;
+    margin-left: 5px;
+}
+.writeImg{
+    width: 22px;
+    height: 22px;
+}
+.writeTxt{
+    display: inline-block;
+    margin-left: 5px;
+    position: relative;
+    left: 39px;
+    bottom:10px;
+}
+.write{
+    position: absolute;
+    left: 6px;
+    top: 36px;
+}
+.skinimgBox{
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+    margin-left:4px;
+}
+.skinImg{
+    width: 28px;
+    height: 28px;
+}
+.skinTxt{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-left: 5px;
+    position: absolute;
+    left: 38px;
+    bottom: -4px;
+}
+.skin{
+    position: absolute;
+    top: 80px;
+    left: 6px;
+}
